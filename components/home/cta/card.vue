@@ -22,8 +22,10 @@ defineProps({
     <div class="cta-card -mt-32">
       <div class="cta-content">
         <div>
-          <h3>{{ title }}</h3>
-          <p>{{ description }}</p>
+          <h3 class="text-primary-100 dark:text-secondary-100">{{ title }}</h3>
+          <p class="text-primary-100 dark:text-secondary-100">
+            {{ description }}
+          </p>
         </div>
         <div>
           <span class="uppercase text-primary-300 text-xs md:text-sm line"
@@ -34,7 +36,7 @@ defineProps({
           <li
             v-for="(item, index) in items"
             :key="index"
-            class="flex sm:w-1/2 gap-x-4 pb-4 pr-4"
+            class="flex sm:w-1/2 gap-x-4 pb-4 pr-4 text-primary-100 dark:text-secondary-100"
           >
             <IconCheckbox class="shrink-0 w-5" />{{ item }}
           </li>
@@ -64,7 +66,7 @@ defineProps({
 }
 
 .cta-content {
-  @apply sm:w-4/6 px-6 py-6 lg:px-12 lg:py-10 space-y-6 bg-white;
+  @apply sm:w-4/6 px-6 py-6 lg:px-12 lg:py-10 space-y-6 bg-white dark:bg-primary-100;
 }
 
 .cta-sell {
