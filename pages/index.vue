@@ -40,6 +40,33 @@ const introList = [
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin purus.',
   },
 ];
+
+const howTo = [
+  {
+    id: 1,
+    icon: 'one.svg',
+    image: 'valaszd-ki.svg',
+    title: 'Válaszd ki a szerződés típusát',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin purus sed neque eu enim congue risus.',
+  },
+  {
+    id: 2,
+    icon: 'two.svg',
+    image: 'szabd-igenyeidre.svg',
+    title: 'Szabd igényeidre és add meg adataidat',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin purus sed neque eu enim congue risus.',
+  },
+  {
+    id: 3,
+    icon: 'three.svg',
+    image: 'ird-ala.svg',
+    title: 'Írd alá és töltsd le a dokumentumot',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin purus sed neque eu enim congue risus.',
+  },
+];
 </script>
 
 <template>
@@ -54,6 +81,7 @@ const introList = [
       content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin purus sed neque eu enim congue risus."
     />
     <HomeCtaWrapper />
+    <HomeHowto :how-to="howTo" title="Hogyan működik?" />
     <div class="site-padding mt-16 flex flex-wrap justify-evenly gap-4">
       <div class="flex flex-col items-center gap-y-2 text-xs">
         <div class="w-10 h-10 rounded-lg bg-primary-100"></div>
