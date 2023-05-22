@@ -1,43 +1,28 @@
 <script setup>
-const benefits = [
-  {
-    title: 'Lorem impum',
-    icon: 'ph:wallet-light',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam id rhoncus aliquam.',
+defineProps({
+  benefits: {
+    type: Array,
+    required: true,
   },
-  {
-    title: 'Dolor sit',
-    icon: 'ph:signature-light',
-    description:
-      'Lorem ipsum adipiscing elit. Sed euismod, adipiscing diam id rhoncus aliquam.',
-  },
-  {
-    title: 'Amet',
-    icon: 'ph:timer-light',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam idam.',
-  },
-];
+});
 </script>
 
 <template>
-  <div
-    class="text-secondary-100 dark:text-primary-100 max-w-screen-xl px-4 sm:px-8 mx-auto -m-36 mb-auto"
+  <section
+    class="text-secondary-100 dark:text-primary-100 site-padding mx-auto -m-36 mb-auto"
   >
     <div
-      class="flex flex-col gap-y-8 items-start sm:flex-row sm:items-start sm:gap-x-4 rounded-xl bg-primary-200 dark:bg-secondary-100 dark:border dark:border-primary-200"
+      class="flex flex-col gap-y-2 items-start sm:flex-row sm:items-start rounded-xl bg-primary-200 dark:bg-secondary-100 dark:border dark:border-primary-200"
     >
       <div
         v-for="benefit in benefits"
         :key="benefit.title"
-        class="flex-1 space-y-4 xl:flex flex-row xl:space-y-0 xl:space-x-4 p-6 md:p-8 lg:p-10"
+        class="flex-1 space-y-4 xl:flex flex-row xl:space-y-0 xl:space-x-3 p-6 md:p-7 xl:p-9"
       >
         <Icon
           size="40"
           :name="benefit.icon"
-          color="white dark:text-primary-300"
-          class="shrink-0"
+          class="shrink-0 text-warning-100"
         />
         <div class="space-y-2">
           <h3>{{ benefit.title }}</h3>
@@ -45,5 +30,5 @@ const benefits = [
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
