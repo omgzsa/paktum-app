@@ -4,13 +4,57 @@ const value = ref();
 watch(value, (val) => {
   console.log(val);
 });
+
+const benefits = [
+  {
+    title: 'Lorem impum',
+    icon: 'ph:wallet-light',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam id rhoncus aliquam.',
+  },
+  {
+    title: 'Dolor sit',
+    icon: 'ph:signature-light',
+    description:
+      'Lorem ipsum adipiscing elit. Sed euismod, adipiscing diam id rhoncus aliquam.',
+  },
+  {
+    title: 'Amet',
+    icon: 'ph:timer-light',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam idam.',
+  },
+];
+
+const introList = [
+  {
+    id: 1,
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin purus.',
+  },
+  {
+    id: 2,
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin purus.',
+  },
+  {
+    id: 3,
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin purus.',
+  },
+];
 </script>
 
 <template>
   <div>
-    <HomeHero />
-    <HomeBenefits />
-    <div class="mt-16 flex flex-wrap justify-evenly gap-4">
+    <HomeHero
+      title="Kösd meg bérleti szerződésed otthonról, gyorsan, egyszerűen"
+    />
+    <HomeBenefits :benefits="benefits" />
+    <HomeIntro
+      :intro-list="introList"
+      title="Lorem ipsum dolor sit amet, consectetur adipiscing elit sagittis"
+      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin purus sed neque eu enim congue risus."
+    />
+    <HomeCtaWrapper />
+    <div class="site-padding mt-16 flex flex-wrap justify-evenly gap-4">
       <div class="flex flex-col items-center gap-y-2 text-xs">
         <div class="w-10 h-10 rounded-lg bg-primary-100"></div>
         primary-100
@@ -52,7 +96,7 @@ watch(value, (val) => {
         warning-100
       </div>
     </div>
-    <div class="space-y-10">
+    <div class="site-padding space-y-10">
       <FormKit
         type="text"
         label="Name"
