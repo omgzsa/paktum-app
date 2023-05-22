@@ -15,6 +15,7 @@ const toggleDark = useToggle(isDark);
           alt="PAKTUM light logo"
           width="120"
           height="60"
+          class="w-full h-8"
         />
         <img
           v-else
@@ -22,6 +23,7 @@ const toggleDark = useToggle(isDark);
           alt="PAKTUM dark logo"
           width="120"
           height="60"
+          class="w-full h-8"
         />
       </NuxtLink>
       <button
