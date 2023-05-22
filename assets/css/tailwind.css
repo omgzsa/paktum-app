@@ -6,7 +6,7 @@
   html,
   body,
   #__nuxt {
-    @apply text-primary-100 dark:text-secondary-100 bg-white dark:bg-primary-200;
+    @apply text-primary-100 dark:text-secondary-100 bg-white dark:bg-primary-200 transition-all;
   }
 
   img {
@@ -35,7 +35,7 @@
 
   p,
   li {
-    @apply leading-snug tracking-wide text-sm md:text-base lg:text-lg xl:text-xl;
+    @apply leading-snug tracking-wide text-sm md:text-base lg:text-lg;
   }
 
   /* button {
