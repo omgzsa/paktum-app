@@ -64,7 +64,7 @@ console.log(nextStep.value, previousStep.value);
 </script>
 
 <template>
-  <section class="site-padding space-y-6 mb-16">
+  <section class="site-padding space-y-6 mb-16 min-h-screen">
     <!-- header -->
     <StepHeader :title="contractTitle" />
     <!-- step-bar -->
