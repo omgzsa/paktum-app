@@ -1,8 +1,13 @@
 <script setup></script>
 
 <template>
-  <div>
+  <div class="h-full w-full grid">
     <NavBar />
-    <slot />
+
+    <div class="relative">
+      <slot />
+    </div>
+
+    <Footer />
   </div>
 </template>
