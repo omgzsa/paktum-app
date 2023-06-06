@@ -1,7 +1,7 @@
 <script setup>
 useHead({
   htmlAttrs: {
-    lang: 'en',
+    lang: 'hu',
   },
   charset: 'utf-8',
   title: 'PAKTUM',
@@ -12,7 +12,7 @@ useHead({
 
 <template>
   <NuxtLayout>
-    <!-- <NuxtLoadingIndicator /> -->
+    <NuxtLoadingIndicator />
     <NuxtPage />
   </NuxtLayout>
 </template>
