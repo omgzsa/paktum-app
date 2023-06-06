@@ -9,10 +9,10 @@ defineProps({
 
 <template>
   <section
-    class="text-secondary-100 dark:text-primary-100 site-padding mx-auto -m-36 mb-auto"
+    class="text-primary-100 dark:text-secondary-100 site-padding mx-auto -m-32 mb-auto"
   >
     <div
-      class="flex flex-col gap-y-2 items-start sm:flex-row sm:items-start rounded-xl bg-primary-200 dark:bg-secondary-100 dark:border dark:border-primary-200"
+      class="flex flex-col gap-y-2 items-start sm:flex-row sm:items-start rounded-xl border bg-white dark:bg-primary-100 dark:border dark:border-primary-200"
     >
       <div
         v-for="benefit in benefits"
