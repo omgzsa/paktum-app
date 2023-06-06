@@ -25,7 +25,7 @@ defineProps({
           src="~/assets/images/szerzodes-illustration.png"
           srcset=""
           alt=""
-          class="w-full h-80 object-contain"
+          class="w-full h-80 object-contain xl:p-3"
         />
       </div>
       <div class="space-y-8 md:max-w-xl mx-auto px-6 md:px-0 md:w-3/5">
