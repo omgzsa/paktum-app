@@ -16,6 +16,8 @@ const optionsArr = computed(() => {
     });
   });
 });
+
+console.log(optionsArr.value);
 </script>
 
 <template>
