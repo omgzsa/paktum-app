@@ -1,7 +1,6 @@
 <script setup>
 import contractRenter from '~/assets/szerzodes-berleti.json';
 import contractTenant from '~/assets/szerzodes-berbeado.json';
-import { INSPECT_MAX_BYTES } from 'buffer';
 
 definePageMeta({
   layout: 'default',
@@ -36,9 +35,10 @@ const currentIndex = computed(() => {
   return steps.value.findIndex((step) => step.id == route.params.step);
 });
 
-const hasNextItem = computed(() => {
-  return currentIndex.value < steps.value.length - 1;
-});
+const hasNextItem = computed(
+  () =>
+    currentIndex.value !== null && currentIndex.value < steps.value.length - 1
+);
 
 const hasPreviousItem = computed(() => {
   return currentIndex.value > 0;
@@ -60,11 +60,12 @@ const previousStep = computed(() => {
   return null;
 });
 
-console.log(nextStep.value, previousStep.value);
+console.log('nextStep', nextStep.value);
+console.log('previousStep', previousStep.value);
 </script>
 
 <template>
-  <section class="site-padding space-y-6 mb-16 min-h-screen">
+  <section class="site-padding space-y-8 xl:space-y-16 mb-16 min-h-screen">
     <!-- header -->
     <StepHeader :title="contractTitle" />
     <!-- step-bar -->
@@ -72,7 +73,7 @@ console.log(nextStep.value, previousStep.value);
     <!-- step content -->
     <StepContent :step="step" />
 
-    <!-- <StepInput :step="step" /> -->
+    <StepInput :step="step" />
 
     <div class="text-left space-x-4">
       <!-- 2 NuxtLink components -->
