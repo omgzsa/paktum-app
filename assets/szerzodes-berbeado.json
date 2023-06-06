@@ -1,0 +1,220 @@
+{
+  "name": "Bérbeadói szerződés",
+  "description": "Szerződés bérbeadók számára",
+  "steps": [
+    {
+      "name": "Level 1",
+      "id": 1,
+      "image": "one.svg",
+      "contentImage": "level1.png",
+      "title": "Alapok",
+      "slug": "a-szerzodes-alapjai",
+      "decisions": [
+        {
+          "question": "Válaszd ki milyen időtávra szeretnél szerződést kötni!",
+          "toolTip": "",
+          "options": [
+            {
+              "id": 1,
+              "label": "Határozott időre",
+              "price": "",
+              "tooltip": "",
+              "isTrue": true
+            },
+            {
+              "id": 2,
+              "label": "Határozatlan időre",
+              "price": "",
+              "tooltip": "",
+              "isTrue": false
+            }
+          ]
+        },
+        {
+          "question": "Az alábbi háttérjogszabályok szövegét kérem a bérleti szerződésembe:",
+          "toolTip": "Magyarázat a Ptk. és a Lakástörvényre vonatkozóan",
+          "options": [
+            {
+              "id": 1,
+              "label": "Ptk.",
+              "price": "2500",
+              "tooltip": "Magyarázat a Ptk. ide vonatkozó részére",
+              "isTrue": true
+            },
+            {
+              "id": 2,
+              "label": "Lakástv.",
+              "price": "3500",
+              "tooltip": "Magyarázat a Lakástv. ide vonatkozó részére",
+              "isTrue": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Level 2",
+      "id": 2,
+      "image": "two.svg",
+      "contentImage": "level2.png",
+      "title": "Eltérések",
+      "slug": "elteresek",
+      "decisions": [
+        {
+          "question": "Kinek a javára térjen el a szerződés?",
+          "toolTip": "",
+          "options": [
+            {
+              "label": "Eltérés a bérlő javára",
+              "price": "",
+              "tooltip": "",
+              "isTrue": true
+            },
+            {
+              "label": "Jogszabályi alapállapot",
+              "price": "",
+              "tooltip": "",
+              "isTrue": false
+            }
+          ]
+        },
+        {
+          "question": "Ha a lakásban károsodás veszélye fenyeget, vagy munkálatokat kell elvégezni, akkor",
+          "toolTip": "",
+          "options": [
+            {
+              "label": "nem kötelező értesítenem a bérbeadót, ellenőrzési joga gyakorlásakor mérje fel.",
+              "price": "",
+              "tooltip": "",
+              "isTrue": true
+            },
+            {
+              "label": "kötelező írásban értesítenem a bérbeadót.",
+              "price": "",
+              "tooltip": "",
+              "isTrue": false
+            }
+          ]
+        },
+        {
+          "question": "Ha állagmegóvási munkálatokat kell elvégezni, akkor",
+          "toolTip": "",
+          "options": [
+            {
+              "label": "előzetesen kérek 3 időpotot, amiből választhatok.",
+              "price": "",
+              "tooltip": "",
+              "isTrue": true
+            },
+            {
+              "label": "a Bérbeadó bármikor elvégezheti a munkálatokat.",
+              "price": "",
+              "tooltip": "",
+              "isTrue": false
+            }
+          ]
+        },
+        {
+          "question": "Ha korszerűsítési munkálatokat kell elvégezni, akkor",
+          "toolTip": "",
+          "options": [
+            {
+              "label": "a bérbeadó értesítésére válaszul felmondhatok a hónap végére.",
+              "price": "",
+              "tooltip": "",
+              "isTrue": true
+            },
+            {
+              "label": "a bérbeadó értesítésére válaszul felmondhatok a következő hónap végére.",
+              "price": "",
+              "tooltip": "",
+              "isTrue": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Level 3",
+      "id": 3,
+      "image": "three.svg",
+      "contentImage": "level3.png",
+      "title": "Mellékletek",
+      "slug": "mellekletek",
+      "decisions": [
+        {
+          "question": "Kinek a javára térjen el a szerződés?",
+          "toolTip": "",
+          "options": [
+            {
+              "label": "Eltérés a bérlő javára",
+              "price": "",
+              "tooltip": "",
+              "isTrue": true
+            },
+            {
+              "label": "Jogszabályi alapállapot",
+              "price": "",
+              "tooltip": "",
+              "isTrue": false
+            }
+          ]
+        },
+        {
+          "question": "Ha a lakásban károsodás veszélye fenyeget, vagy munkálatokat kell elvégezni, akkor",
+          "toolTip": "",
+          "options": [
+            {
+              "label": "nem kötelező értesítenem a bérbeadót, ellenőrzési joga gyakorlásakor mérje fel.",
+              "price": "",
+              "tooltip": "",
+              "isTrue": true
+            },
+            {
+              "label": "kötelező írásban értesítenem a bérbeadót.",
+              "price": "",
+              "tooltip": "",
+              "isTrue": false
+            }
+          ]
+        },
+        {
+          "question": "Ha állagmegóvási munkálatokat kell elvégezni, akkor",
+          "toolTip": "",
+          "options": [
+            {
+              "label": "előzetesen kérek 3 időpotot, amiből választhatok.",
+              "price": "",
+              "tooltip": "",
+              "isTrue": true
+            },
+            {
+              "label": "a Bérbeadó bármikor elvégezheti a munkálatokat.",
+              "price": "",
+              "tooltip": "",
+              "isTrue": false
+            }
+          ]
+        },
+        {
+          "question": "Ha korszerűsítési munkálatokat kell elvégezni, akkor",
+          "toolTip": "",
+          "options": [
+            {
+              "label": "a bérbeadó értesítésére válaszul felmondhatok a hónap végére.",
+              "price": "",
+              "tooltip": "",
+              "isTrue": true
+            },
+            {
+              "label": "a bérbeadó értesítésére válaszul felmondhatok a következő hónap végére.",
+              "price": "",
+              "tooltip": "",
+              "isTrue": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
