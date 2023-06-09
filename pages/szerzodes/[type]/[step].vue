@@ -31,6 +31,11 @@ const step = computed(() => {
   return steps.value.find((step) => step.id == route.params.step);
 });
 
+// console.log('step', step.value);
+// console.log('steps', steps.value);
+// console.log('step-id', step.value.id);
+// console.log('route-param', route.params.step);
+
 const currentIndex = computed(() => {
   return steps.value.findIndex((step) => step.id == route.params.step);
 });
@@ -59,13 +64,10 @@ const previousStep = computed(() => {
   }
   return null;
 });
-
-console.log('nextStep', nextStep.value);
-console.log('previousStep', previousStep.value);
 </script>
 
 <template>
-  <section class="site-padding space-y-8 xl:space-y-16 mb-16 min-h-screen">
+  <section class="site-padding space-y-8 mb-16 min-h-screen">
     <!-- header -->
     <StepHeader :title="contractTitle" />
     <!-- step-bar -->
@@ -73,7 +75,7 @@ console.log('previousStep', previousStep.value);
     <!-- step content -->
     <StepContent :step="step" />
 
-    <StepInput :step="step" />
+    <!-- <StepInput :step="step" /> -->
 
     <div class="text-left space-x-4">
       <!-- 2 NuxtLink components -->
