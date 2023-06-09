@@ -30,7 +30,7 @@ const isDark = useDark();
         </NuxtLink>
       </div>
 
-      <div class="md:flex items-center text-xs">
+      <div class="lg:flex lg:space-x-4 items-center text-xs">
         <p>How it works</p>
         <p>Terms and Conitions</p>
         <p>Privacy Policy</p>
