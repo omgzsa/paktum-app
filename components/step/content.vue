@@ -10,7 +10,7 @@ const stepTitle = computed(() => `${props.step.name} | ${props.step.title}`);
 </script>
 
 <template>
-  <section class="mb-16">
+  <section class="">
     <div class="md:flex gap-x-8">
       <div class="space-y-6 flex-1">
         <h2 class="border-b-2 border-primary-100 pb-2 mb-2">
