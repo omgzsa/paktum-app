@@ -8,7 +8,7 @@ const isDark = useDark();
   <div
     class="bg-secondary-100 dark:bg-primary-100 text-primary-100 dark:text-secondary-100 py-4"
   >
-    <div class="site-padding flex justify-between items-center">
+    <div class="site-padding flex justify-between gap-4 items-start">
       <div>
         <NuxtLink to="/">
           <img
@@ -30,14 +30,14 @@ const isDark = useDark();
         </NuxtLink>
       </div>
 
-      <div class="flex space-x-4 items-center">
+      <div class="md:flex items-center text-xs">
         <p>How it works</p>
         <p>Terms and Conitions</p>
         <p>Privacy Policy</p>
         <p>Contact</p>
       </div>
 
-      <div class="flex space-x-2">
+      <div class="flex flex-wrap gap-2">
         <Icon name="fa6-brands:facebook" size="25" />
         <Icon name="fa6-brands:twitter" size="25" />
         <Icon name="fa6-brands:linkedin" size="25" />
